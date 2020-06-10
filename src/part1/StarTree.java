@@ -4,7 +4,7 @@ public class StarTree {
 	
 	void draw(int row) {
 		if(row <= 0) {
-			System.out.print("Row Value Need To Be Greater Than Positive");
+			System.out.print("Row Value Need To Be Greater Than Zero");
 			return;
 		}
 		for (int i = 0; i < row; i++) {

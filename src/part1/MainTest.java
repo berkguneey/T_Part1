@@ -45,14 +45,14 @@ class MainTest {
 	void test3() {
 		StarTree starTreeTest = new StarTree();
 		starTreeTest.draw(-1);
-		Assert.assertEquals("Row Value Need To Be Greater Than Positive", out.toString());
+		Assert.assertEquals("Row Value Need To Be Greater Than Zero", out.toString());
 	}
 	
 	@Test
 	void test4() {
 		StarTree starTreeTest = new StarTree();
 		starTreeTest.draw(0);
-		Assert.assertEquals("Row Value Need To Be Greater Than Positive", out.toString());
+		Assert.assertEquals("Row Value Need To Be Greater Than Zero", out.toString());
 	}
 
 }
