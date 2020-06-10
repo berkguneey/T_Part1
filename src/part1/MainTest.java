@@ -25,19 +25,9 @@ class MainTest {
 						" *****\r\n" + 
 						"*******\r\n", out.toString());
 	}
+	
 	@Test
 	void test2() {
-		StarTree starTreeTest = new StarTree();
-		starTreeTest.draw(5);
-		Assert.assertEquals(
-						"    *\r\n" + 
-						"   ***\r\n" + 
-						"  *****\r\n" + 
-						" *******\r\n" +
-						"*********\r\n", out.toString());
-	}
-	@Test
-	void test3() {
 		StarTree starTreeTest = new StarTree();
 		starTreeTest.draw(8);
 		Assert.assertEquals(
@@ -49,6 +39,20 @@ class MainTest {
 						"  ***********\r\n" +
 						" *************\r\n" +
 						"***************\r\n", out.toString());
+	}
+	
+	@Test
+	void test3() {
+		StarTree starTreeTest = new StarTree();
+		starTreeTest.draw(-1);
+		Assert.assertEquals("Row Value Need To Be Greater Than Positive", out.toString());
+	}
+	
+	@Test
+	void test4() {
+		StarTree starTreeTest = new StarTree();
+		starTreeTest.draw(0);
+		Assert.assertEquals("Row Value Need To Be Greater Than Positive", out.toString());
 	}
 
 }
