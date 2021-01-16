@@ -13,6 +13,8 @@ public class Main {
 		starTree.draw(row);
 
 		scanner.close();
+		
+		System.out.println("deneme");
 	}
 
 }
